@@ -205,11 +205,37 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Calibri", Calibri, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #8c5726;
+}
+#wrapper{
+  background-color: #056472;
+  width: 75%;
+  max-width:980px;
+  margin: 5px auto;
+  }
+#logo{
+  margin: 0px 35%;
+}
+label{
+  font-size: 24px;
+}
+.textinput{
+  margin: 10px 0px;
+}
+header{
+  background-color: #34a8b9;
+}
+#submitbutton{
+  display: block;
+  margin-top: 15px;
+  background: url(Assets/images/submitbutton.jpg);
+}
+#content{
+  margin: 0px 35%;
 }
 a {
   color: #0088cc;
@@ -642,7 +668,9 @@ h1 {
   font-size: 38.5px;
 }
 h2 {
-  font-size: 31.5px;
+  font-size: 24px;
+  color: #000000;
+  font-family: Calibri;
 }
 h3 {
   font-size: 24.5px;
@@ -5280,6 +5308,12 @@ button.close {
 .visible-desktop {
   display: inherit !important;
 }
+
+
+
+/*--------------------------------------------------Media Queries---------------------------------------------*/
+
+
 @media (min-width: 768px) and (max-width: 979px) {
   .hidden-desktop {
     display: inherit !important;
@@ -5320,6 +5354,12 @@ button.close {
   }
 }
 @media (max-width: 767px) {
+  #logo{
+    margin: 0px 0px 10px 17.5%;
+  }
+  #content{
+    margin: 0px 0px 0px 0px;
+  }
   body {
     padding-left: 20px;
     padding-right: 20px;
@@ -5417,6 +5457,21 @@ button.close {
   }
 }
 @media (max-width: 480px) {
+  #logo{
+    margin: 0px 0px 10px 0px;
+  }
+  h2{
+    font-size: 85%;
+  }
+  #content{
+    margin: 0px 0px 0px 0px;
+  }
+  .textinput{
+    width: 75%;
+  }
+  header{
+    margin: 10 10 10 0;
+  }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
