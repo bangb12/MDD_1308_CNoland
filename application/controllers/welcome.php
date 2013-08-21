@@ -1,5 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+ini_set('display_errors', 'On');
+error_reporting(E_ALL | E_STRICT);
+session_start();
 class Welcome extends CI_Controller {
 
 	/**
@@ -19,7 +21,39 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$pagename = "Chris Noland's Space";
+		$this->load->model('signupmodel','signup');
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('form_validation');
+		$this->load->model('loginmodel', 'login');
+		$this->load->model('viewmodel','views');
+		if(!empty($_GET["action"])){
+			if($_GET["action"]=="register"){
+			    $this->load->view("signup");
+			}
+			if($_GET["action"]=="home"){
+			    $this->load->view("listing");
+			}
+			if($_GET["action"]=="login"){
+			    $this->load->view("loginview");
+			}
+			if($_GET["action"]=="checklogin"){
+				$result = $this->loginmodel->checkLogin($_POST["username"],$_POST["password"]);
+				
+				if(count($result)>0){
+				    $this->load->view('listing');
+				}else{
+				    $this->load->view("loginview");
+				    echo "<center>Login Error</center>";
+				}
+			    }
+			if($_GET["action"]=="logout"){
+			    $this->loginmodel->logout();
+			    $this->load->view('listing');
+			}
+		} else {
 		$this->load->view('listing');
+        }
 	}
 }
 

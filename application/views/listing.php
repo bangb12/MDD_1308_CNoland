@@ -10,7 +10,13 @@
 <body>
     <div id="wrapper">
         <header>
-            <a href="#"><img src="Assets/images/logo.jpg" alt="Chris Noland's Space" width="242px" height="102px" id="logo"></a><a href=?action=register><h2>Sign-up</h2></a>
+            <a href=?action=home><img src="Assets/images/logo.jpg" alt="Chris Noland's Space" width="242px" height="102px" id="logo"></a><?
+            if($this->session->userdata('logged_in')){
+                echo('<a href=?action=register><h2>Sign-up</h2></a><a href=?action=logout><h2>Logout</h2></a>');
+            }else{
+                echo('<a href=?action=register><h2>Sign-up</h2></a><a href=?action=login><h2>Log-In</h2></a>');
+            }
+            ?>
         </header>
         <div id="listingcontent">
             <div class="project">
