@@ -688,8 +688,10 @@ h1 {
   color: #34a8b9;
 }
 h2 {
-  font-size: 24px;
-  color: #000000;
+  font-size: 18px;
+  color: #34a8b9;
+  display: inline;
+  margin: 5% ;
   font-family: Calibri;
 }
 h3 {
@@ -5479,6 +5481,10 @@ button.close {
 @media (max-width: 480px) {
   h1, h2{
     font-size: 85%;
+  }
+  header h2{
+    display: block;
+    margin: 2%;
   }
   .project p{
     font-size:75%;

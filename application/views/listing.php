@@ -10,7 +10,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <a href="#"><img src="Assets/images/logo.jpg" alt="Chris Noland's Space" width="242px" height="102px" id="logo"></a>
+            <a href="#"><img src="Assets/images/logo.jpg" alt="Chris Noland's Space" width="242px" height="102px" id="logo"></a><a href=?action=register><h2>Sign-up</h2></a>
         </header>
         <div id="listingcontent">
             <div class="project">
