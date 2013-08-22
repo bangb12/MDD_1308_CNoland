@@ -29,11 +29,10 @@ class loginModel extends CI_Model{
         $this->db->select('id, username, password');
         $this->db->from('users');
         $this->db->where('username', $username);
-        $this->db->where('password', $password);       
+        $this->db->where('password', md5($password));       
         $query = $this->db->get();
-        
         if($query->num_rows() == 1){
-            return ($query->num_rows());
+            return $query->result();
         }else{
             return FALSE;
         }

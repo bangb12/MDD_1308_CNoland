@@ -1,7 +1,11 @@
 <?
-
 class login extends CI_Controller{
     
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->model('loginmodel','','TRUE');
+    }
     function index()
     {
         $this->load->library('form_validation');
@@ -19,8 +23,8 @@ class login extends CI_Controller{
     function check_database($password)
     {
         $username = $this->input->post('username');
-        $result = $this->user->login($username, $password);
-        
+        $result = $this->loginmodel->login($username, $password);
+        var_dump($result);
         if($result){
             $sess_array = array();
             foreach($result as $row){

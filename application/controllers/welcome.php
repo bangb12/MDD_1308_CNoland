@@ -2,7 +2,8 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);
 session_start();
-class Welcome extends CI_Controller {
+include('login.php');
+class Welcome extends login {
 
 	/**
 	 * Index Page for this controller.
@@ -25,7 +26,7 @@ class Welcome extends CI_Controller {
 		$this->load->model('signupmodel','signup');
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
-		$this->load->model('loginmodel', 'login');
+		$this->load->model('loginmodel');
 		$this->load->model('viewmodel','views');
 		if(!empty($_GET["action"])){
 			if($_GET["action"]=="register"){
@@ -38,10 +39,10 @@ class Welcome extends CI_Controller {
 			    $this->load->view("loginview");
 			}
 			if($_GET["action"]=="checklogin"){
-				$result = $this->loginmodel->checkLogin($_POST["username"],$_POST["password"]);
-				
+				$result = $this->login->index();
 				if(count($result)>0){
 				    $this->load->view('listing');
+				    
 				}else{
 				    $this->load->view("loginview");
 				    echo "<center>Login Error</center>";
