@@ -42,7 +42,7 @@ class loginModel extends CI_Model{
     public function logout(){
         $this->session->unset_userdata('logged_in');
         session_destroy();
-        redirect('refresh');
+        $this->load->view('listing');
 
     }
     public function update($id='', $email=''){
