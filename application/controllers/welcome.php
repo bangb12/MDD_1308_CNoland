@@ -30,31 +30,35 @@ class Welcome extends CI_Controller {
 		$this->load->model('viewmodel','views');
 		if(!empty($_GET["action"])){
 			if($_GET["action"]=="register"){
-			    $this->load->view("signup");
+				$this->load->view("signup");
+			}
+			if($_GET["action"]=="checkregister")
+			{
+				$this->signup->signup();
 			}
 			if($_GET["action"]=="home"){
-			    $this->load->view("listing");
+				$this->load->view("listing");
 			}
 			if($_GET["action"]=="login"){
-			    $this->load->view("loginview");
+				$this->load->view("loginview");
 			}
 			if($_GET["action"]=="checklogin"){
 				$result = $this -> validate_credentials();
 				if(count($result)>0){
-				    $this->load->view('listing');
+					$this->load->view('listing');
 				    
 				}else{
-				    $this->load->view("loginview");
-				    echo "<center>Login Error</center>";
+					$this->load->view("loginview");
+					echo "<center>Login Error</center>";
 				}
 			    }
 			if($_GET["action"]=="logout"){
-			    $this->loginmodel->logout();
-			    $this->load->view('listing');
+				$this->loginmodel->logout();
+				$this->load->view('listing');
 			}
 		} else {
-		$this->load->view('listing');
-        }
+			$this->load->view('listing');
+		}
 	}
 	function validate_credentials()
     {

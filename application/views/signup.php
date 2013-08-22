@@ -12,7 +12,7 @@
             <a href=?action=home><img src="Assets/images/logo.jpg" alt="Chris Noland's Space" width="242px" height="102px" id="logo"></a>
         </header>
         <div id="content">
-            <form name="register" action="?action=checklogin" method="post">
+            <form name="register" action="?action=checkregister" method="post">
                 <label><h3>Username:</h3> </label>
                 <input type="text" name="username" class="textinput" maxlength="20"/>
                 <label><h3>First Name:</h3></label>
