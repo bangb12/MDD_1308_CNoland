@@ -11,6 +11,7 @@
     <div id="wrapper">
         <header>
             <a href=?action=home><img src="Assets/images/logo.jpg" alt="Chris Noland's Space" width="242px" height="102px" id="logo"></a><?
+            //If statement that checks if a user is logged in, if yes it takes away the login and signup buttons and adds the logout.
             if($this->session->userdata('logged_in')){
                 echo('<a href=?action=logout><h2>Logout</h2></a>');
             }else{
@@ -19,6 +20,7 @@
             ?>
         </header>
         <div id="listingcontent">
+            //Div's for the projects.
             <div class="project">
                 <a href="#"><h1>Project Name</h1></a>
                 <img src="Assets/images/projectplaceholder.gif" class="hidden-phone"/>
