@@ -46,15 +46,10 @@ class Welcome extends CI_Controller {
 				$result = $this -> validate_credentials();
 				if(count($result)>0){
 					$this->load->view('listing');
-				    
-				}else{
-					$this->load->view("loginview");
-					echo "<center>Login Error</center>";
 				}
 			    }
 			if($_GET["action"]=="logout"){
 				$this->loginmodel->logout();
-				$this->load->view('listing');
 			}
 		} else {
 			$this->load->view('listing');
