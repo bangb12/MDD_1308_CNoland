@@ -6,14 +6,11 @@ class signupmodel extends CI_Model{
         
     }
     public function signup(){
-        $data = array(
-            $username=$_POST['username'],
-            $password=md5($_POST['password']),
-            $email=$_POST['email'],
-            $firstname=$_POST['firstname']
-        );
-        var_dump($data);
-        $this->db->insert('users', $data);
+        $username=$_POST['username'];
+        $password=md5($_POST['password']);
+        $email=$_POST['email'];
+        $firstname=$_POST['firstname'];
+        $query=mysql_query("INSERT into users(username, password, email, firstname)VALUES('$username', '$password', '$email', '$firstname')");
         $this->load->view('listing');
     }
 }
