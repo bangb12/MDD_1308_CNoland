@@ -20,7 +20,7 @@
             ?>
         </header>
         <div id="listingcontent">
-            //Div's for the projects.
+            <!--Div's for the projects.-->
             <div class="project">
                 <a href="#"><h1>Project Name</h1></a>
                 <img src="Assets/images/projectplaceholder.gif" class="hidden-phone"/>
@@ -35,6 +35,7 @@
                 <a href="#"><h1>Project Name</h1></a>
                 <img src="Assets/images/projectplaceholder.gif" class="hidden-phone"/>
                 <p>This would be a description of the project, telling a little bit about the why, what, and how.</p>
+                <p>Email bangb12@fullsail.edu if you have issues with the site</p>
             </div>
         </div>
     </div>

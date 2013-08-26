@@ -14,3 +14,5 @@ Username: admin
 Password: admin
 
 This should log you in and change the home screen to have a log-out button. this function will be improved in the future.
+
+There are comments, I've checked but for some reason they do NOT show up on GitHub. Please refer to the file on your system for my commenting
