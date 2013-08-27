@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Libraries/Bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <title>Listings - Chris Noland's Space</title>
+    <title>Terms of Service - Chris Noland's Space</title>
 </head>
 
 <body>
@@ -24,9 +24,9 @@
         <div id="contenttos">
             <!--Div for the content.-->
             
-            <h2>
+            <h3>
                     Web Site Terms and Conditions of Use
-            </h2>
+            </h3>
             
             <h3>
                     1. Terms
@@ -121,9 +121,9 @@
             
             
             
-            <h2>
+            <h3>
                     Privacy Policy
-            </h2>
+            </h3>
             
             <p>
                     Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.

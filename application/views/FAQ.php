@@ -28,6 +28,8 @@
                 <p>This is a personal space for me to show off content. </p></li>
                 <li><h4>Who are you?</h4>
                 <p>My name is Chris Noland, and I'm a student in Web Design</p></li>
+                <li><h4>The app isn't working! Who do I contact?</h4>
+                <p>You can contact me at bangb12@fullsail.edu with an error report! </p></li>
                 <li><h4>More will be added later....</h4></li>
             </ul>
         </div>
