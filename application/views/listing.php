@@ -40,6 +40,8 @@
                 <br />
                 <br />    
                 <h4>Email bangb12@fullsail.edu if you have issues with the site</h4>
+                <a href=?action=tos><h5>Terms of Service</h5></a>
+                <h5>&copy Christopher Noland and Chris Noland's Space 2013</h5>
             </div>
         </div>
     </div>

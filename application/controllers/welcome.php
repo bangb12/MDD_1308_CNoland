@@ -61,6 +61,9 @@ class Welcome extends CI_Controller {
 			if($_GET["action"]=="faq"){
 				$this->load->view("FAQ");
 			}
+			if($_GET["action"]=="tos"){
+				$this->load->view("terms");
+			}
 		} else {
 			//Loads home page when nothing else is being done
 			$this->load->view('listing');
