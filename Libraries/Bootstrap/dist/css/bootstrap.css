@@ -256,6 +256,9 @@ header{
 #contenttos{
   margin: 0px 5%
 }
+#detailscontent{
+  margin: 0px 5%;
+}
 #listingcontent{
   margin: 0px 25%;
 }
@@ -5494,9 +5497,6 @@ button.close {
   }
   .project h1{
     background: url(../../../../Assets/images/headerbackground.jpg) no-repeat top center;
-  }
-  #projectimg {
-    width: 120%;
   }
   #content{
     margin: 0px 0px 0px 0px;

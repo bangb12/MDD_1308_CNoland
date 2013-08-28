@@ -24,22 +24,18 @@
         <div id="listingcontent">
             <!--Div's for the projects.-->
             <div class="project">
-                <a href="#"><h1>Project Name</h1></a>
-                <img src="Assets/images/projectplaceholder.gif" class="hidden-phone"/>
-                <p>This would be a description of the project, telling a little bit about the why, what, and how.</p>
+                <a href="?action=details1"><h1>Eclipse Store Project</h1></a>
+                <img src="Assets/images/Store-small.jpg" class="hidden-phone"/>
+                <p>This was school project to design a partially working javascript store.</p>
             </div>
             <div class="project">
-                <a href="#"><h1>Project Name</h1></a>
-                <img src="Assets/images/projectplaceholder.gif" class="hidden-phone"/>
-                <p>This would be a description of the project, telling a little bit about the why, what, and how.</p>
+                <a href="?action=details2"><h1>Adobe Flash Game</h1></a>
+                <img src="Assets/images/game-small.jpg" class="hidden-phone"/>
+                <p>A school project of a small flash game involving a fairy, trolls and diamond projectiles</p>
             </div>
-            <div class="project">
-                <a href="#"><h1>Project Name</h1></a>
-                <img src="Assets/images/projectplaceholder.gif" class="hidden-phone"/>
-                <p>This would be a description of the project, telling a little bit about the why, what, and how.</p>
                 <br />
                 <br />    
-                <h4>Email bangb12@fullsail.edu if you have issues with the site</h4>
+                <h5>Email bangb12@fullsail.edu if you have issues with the site</h5>
                 <a href=?action=tos><h5>Terms of Service</h5></a>
                 <h5>&copy Christopher Noland and Chris Noland's Space 2013</h5>
             </div>
