@@ -262,6 +262,9 @@ header{
 #listingcontent{
   margin: 0px 25%;
 }
+.from-errors p{
+  color: red;
+}
 a {
   color: #0088cc;
   text-decoration: none;

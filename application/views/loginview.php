@@ -12,6 +12,13 @@
             <a href=?action=home><img src="Assets/images/logo.jpg" alt="Chris Noland's Space" width="242px" height="102px" id="logo"></a>
         </header>
         <div id="content">
+                <?php if (isset($_SESSION['errors'])): ?>
+                <div class="form-errors">
+                    <?php foreach($_SESSION['errors'] as $error): ?>
+                        <p><?php echo $error ?></p>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?> 
                 <form action="?action=checklogin" method="POST">
                 <label><h3>Username:</h3> </label>
                 <input type="text" name="username" class="textinput" maxlength="20"/>
