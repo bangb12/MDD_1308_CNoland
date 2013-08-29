@@ -12,7 +12,7 @@ class signupmodel extends CI_Model{
         $this->form_validation->set_rules('firstname', 'First Name:', 'trim|required');
         $this->form_validation->set_rules('password', 'Password:', 'trim|required|min_length[4]');
         $this->form_validation->set_rules('emailaddress', 'Email Address:', 'trim|required|valid_email');
-       
+       //Checks if form validation found problems, posts to database if everything is okay
        if($this->form_validation->run() == FALSE)
        {
             log_message('error', 'Unable to insert into Datbase, Validation failed');
