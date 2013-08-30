@@ -1,6 +1,6 @@
 MDD_1308_CNoland
 ================
-
+Database.sql is located in Libraries folder
 Database User and Pass
 Username: root
 Pass: root
